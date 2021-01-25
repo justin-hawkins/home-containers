@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024M #optional
     volumes:
-      - '~/docker-data/enifi-controller:/config'
+      - '~/docker_data/enifi-controller:/config'
     ports:
       - 3478:3478/udp
       - 10001:10001/udp
