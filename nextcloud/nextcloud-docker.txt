@@ -1,0 +1,7 @@
+docker run -d -p 8081:80 \
+    --name nc-001 \
+    -v /home/node/docker_data/nextcloud:/var/www/html \
+    -v /home/node/docker_data/apps:/var/www/html/custom_apps \
+    -v /home/node/docker_data/config:/var/www/html/config \
+    -v /home/node/docker_data/nextcloud/data:/var/www/html/data \
+    nextcloud
